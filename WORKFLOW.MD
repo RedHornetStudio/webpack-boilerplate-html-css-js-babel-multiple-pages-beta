@@ -48,7 +48,7 @@ src
 # install following packages
 npm install webpack webpack-cli webpack-dev-server html-loader html-webpack-plugin sass-loader node-sass css-loader mini-css-extract-plugin file-loader babel-loader @babel/core @babel/preset-env clean-webpack-plugin --save-dev
 
-# add to package.json new scripts which you will use to start development server or bundle html, scss and js files. For each page create two scripts for example: build-main and start-main, build-about and start-about. To build all pages chain them into one script "build" using && (&& runs scripts sequentially)
+# add to package.json new scripts which you will use to start development server or bundle html, scss and js files
 "build": "webpack --mode production",
 "start": "webpack serve --mode development"
 
@@ -174,7 +174,7 @@ module.exports = {
   ]
 };
 
-# run development server. To stop server use "ctrl + c"
+# to run development server use following command: (to stop server use "ctrl + c")
 npm run start
 
 # to bundle html, scss and js files use following command:
